@@ -9,6 +9,14 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class PrimeNumberGeneratorTest {
 
     @Test
+    public void underTen() {
+
+        PrimeNumberGenerator primeNumberGenerator = new PrimeNumberGenerator();
+        List<Integer> expected = List.of(2, 3, 5, 7);
+        assertEquals(expected, primeNumberGenerator.generate(10));
+    }
+
+    @Test
     public void underFifty() {
 
         PrimeNumberGenerator primeNumberGenerator = new PrimeNumberGenerator();
